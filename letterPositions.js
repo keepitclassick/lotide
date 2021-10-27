@@ -18,9 +18,7 @@ const assertArraysEqual = function(arr1, arr2) {
 
 
 const letterPositions = function(sentence) {
-  const results = {};
-  //sentence = sentence.split(' ').join('');
-
+  const results = {}; //empty obj to store results
   for (let i = 0; i < sentence.length; i++) {
     let letter = sentence[i];
     if (letter !== ' ') { //if the letter is not a space continue to check if it is already included in the results
@@ -34,8 +32,6 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+/*testing
 console.log(letterPositions('lighthouse in the house'));
-/*return all the indices (zero-based positions) in the string where each character is found.
-For each letter, instead of returning just one number to represent its number of occurrences, multiple numbers may be needed to represent all the places in the string that it shows up.
-*/
-assertArraysEqual(letterPositions("hello").l, [2,3]);
+assertArraysEqual(letterPositions("hello").l, [2,3]);*/
