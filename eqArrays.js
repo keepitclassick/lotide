@@ -1,5 +1,3 @@
-
-
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🙏 🙏 🙏 Assertion Passed: ${actual} === ${expected}`);
@@ -10,10 +8,14 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//test code
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(3, 4);
-assertEqual('me', 'mo');
-assertEqual('yes','yes');
+
+const eqArrays = function(arr1,arr2) {
+  let i = arr1.length;
+  if (i !== arr2.length) return false;
+  while (i--) {
+    if (arr1[i] !== arr2[i]) return false;
+  }
+  return true;
+}
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 
