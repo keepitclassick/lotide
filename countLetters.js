@@ -32,3 +32,4 @@ assertEqual(countLetters(message)["l"],6);
 //then iterate through the letters
 //count the number of occ of each letter
 //return an object including the count of each letter
+module.exports = countLetters;

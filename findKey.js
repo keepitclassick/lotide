@@ -40,3 +40,5 @@ let result2 = (findKey(object2, x => x.stars === 2));
 
 assertEqual(result, 'noma');
 assertEqual(result2, undefined);
+
+module.exports = findKey;

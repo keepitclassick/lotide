@@ -1,11 +1,5 @@
-const eqArrays = function(arr1,arr2) {
-  let i = arr1.length;
-  if (i !== arr2.length) return false;
-  while (i--) {
-    if (arr1[i] !== arr2[i]) return false;
-  }
-  return true;
-};
+const eqArrays = require ('./eqArrays')
+
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -39,6 +33,8 @@ const eqObjects = function(object1, object2) {
   }
   return true;
 };
+
+module.exports = eqObjects
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };

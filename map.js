@@ -1,11 +1,4 @@
-const eqArrays = function(arr1,arr2) {
-  let i = arr1.length;
-  if (i !== arr2.length) return false;
-  while (i--) {
-    if (arr1[i] !== arr2[i]) return false;
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays')
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1,arr2) === true) { //if running eqArrays returns true
@@ -23,6 +16,8 @@ const map = function(array, callback) {
   }
   return results;
 };
+
+
 const words = ["ground", "control", "to", "major", "tom"];
 const animals = ['dog', 'cat', 'frog', 'bat'];
 const people = ["bill","bob","sue"];
@@ -38,3 +33,6 @@ assertArraysEqual(results1,['g', 'c', 't', 'm', 't']);
 assertArraysEqual(results2,['dogs','cats', 'frogs', 'bats']);
 assertArraysEqual(results3,['bill is the coolest!','bob is the coolest!', 'sue is the coolest!']);
 assertArraysEqual(results4,[ 5, 10, 15, 20, 25 ]);
+
+
+module.exports = map.js 

@@ -1,5 +1,5 @@
 
-/*const eqArrays = function(arr1,arr2) {
+const eqArrays = function(arr1,arr2) {
   let i = arr1.length;
   if (i !== arr2.length) return false;
   while (i--) {
@@ -14,7 +14,7 @@ const assertArraysEqual = function(arr1, arr2) {
   } else {
     console.log(`👀 👀 👀 Assertion Failed: ${arr1} !== ${arr2}`);
   }
-}; */
+}; 
 
 
 const takeUntil = function(array, callback) {
@@ -40,3 +40,5 @@ console.log(results2);
 assertArraysEqual(results1,[ 1, 2, 5, 7, 2 ]);
 assertArraysEqual(results2,[ 'I\'ve', 'been', 'to', 'Hollywood' ]
 );
+
+module.exports = takeUntil
