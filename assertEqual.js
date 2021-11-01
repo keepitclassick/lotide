@@ -10,10 +10,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+module.exports = assertEqual;
+
 //test code
-assertEqual("Lighthouse Labs", "Bootcamp");
+/*assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual(3, 4);
 assertEqual('me', 'mo');
-assertEqual('yes','yes');
+assertEqual('yes','yes');*/
+
 
